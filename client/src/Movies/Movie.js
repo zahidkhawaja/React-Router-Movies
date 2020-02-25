@@ -21,7 +21,7 @@ const Movie = (props) => {
   
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
-    addToSavedList(movie)
+    addToSavedList(movie);
   }
 
   if (!movie) {
@@ -32,6 +32,7 @@ const Movie = (props) => {
   return (
     <div className="save-wrapper">
       <MovieCard card = {movie}/>
+      <button onClick = {saveMovie} className = "save-button">Save</button>
       </div>
   );
 }
