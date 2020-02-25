@@ -10,11 +10,10 @@ const MovieCard = ({card}) => {
       <div className="movie-metascore">
         Metascore: <strong>{card.metascore}</strong>
       </div>
-      <h3>Actors</h3>
-
+      <h3>Actors:</h3>
       {card.stars.map(star => (
         <div key={card.star} className="movie-star">
-          {card.star}
+          {star}
         </div>
       ))}
     </div>
