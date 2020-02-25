@@ -22,6 +22,7 @@ const Movie = (props) => {
   const saveMovie = () => {
     const addToSavedList = props.addToSavedList;
     addToSavedList(movie);
+
   }
 
   if (!movie) {
